@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632FB8201D7561A5005D4654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB81F1D7561A5005D4654 /* main.m */; };
+		632FB8291D7561A5005D4654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB8271D7561A5005D4654 /* Main.storyboard */; };
+		632FB82B1D7561A5005D4654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FB82A1D7561A5005D4654 /* Assets.xcassets */; };
+		632FB82E1D7561A5005D4654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB82C1D7561A5005D4654 /* LaunchScreen.storyboard */; };
+		632FB8381D756248005D4654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8371D756248005D4654 /* AppDelegate.m */; };
+		632FB83F1D756579005D4654 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB83E1D756579005D4654 /* MainViewController.m */; };
+		632FB8471D756689005D4654 /* FinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8461D756689005D4654 /* FinderViewController.m */; };
+		632FB84A1D756694005D4654 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8491D756694005D4654 /* PersonViewController.m */; };
+		632FB8511D756C11005D4654 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB84E1D756C11005D4654 /* ClassViewController.m */; };
+		632FB8551D757460005D4654 /* SHNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8541D757460005D4654 /* SHNavgationView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		632FB81B1D7561A5005D4654 /* Guodong4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guodong4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		632FB81F1D7561A5005D4654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		632FB8281D7561A5005D4654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		632FB82A1D7561A5005D4654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		632FB82D1D7561A5005D4654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		632FB82F1D7561A5005D4654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632FB8361D756248005D4654 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		632FB8371D756248005D4654 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		632FB83D1D756579005D4654 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		632FB83E1D756579005D4654 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		632FB8411D756606005D4654 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		632FB8451D756689005D4654 /* FinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderViewController.h; sourceTree = "<group>"; };
+		632FB8461D756689005D4654 /* FinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinderViewController.m; sourceTree = "<group>"; };
+		632FB8481D756694005D4654 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		632FB8491D756694005D4654 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		632FB84D1D756C11005D4654 /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
+		632FB84E1D756C11005D4654 /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
+		632FB8531D757460005D4654 /* SHNavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavgationView.h; sourceTree = "<group>"; };
+		632FB8541D757460005D4654 /* SHNavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavgationView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		632FB8181D7561A5005D4654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		632FB8121D7561A5005D4654 = {
+			isa = PBXGroup;
+			children = (
+				632FB81D1D7561A5005D4654 /* Guodong4 */,
+				632FB81C1D7561A5005D4654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		632FB81C1D7561A5005D4654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				632FB81B1D7561A5005D4654 /* Guodong4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		632FB81D1D7561A5005D4654 /* Guodong4 */ = {
+			isa = PBXGroup;
+			children = (
+				632FB8351D756248005D4654 /* AppDelegate */,
+				632FB83C1D756563005D4654 /* Tabbar */,
+				632FB8391D756286005D4654 /* Class */,
+				632FB83A1D756286005D4654 /* Finder */,
+				632FB83B1D756286005D4654 /* Person */,
+				632FB8521D756FCA005D4654 /* Common Files */,
+				632FB81E1D7561A5005D4654 /* Supporting Files */,
+			);
+			path = Guodong4;
+			sourceTree = "<group>";
+		};
+		632FB81E1D7561A5005D4654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				632FB82F1D7561A5005D4654 /* Info.plist */,
+				632FB8271D7561A5005D4654 /* Main.storyboard */,
+				632FB82A1D7561A5005D4654 /* Assets.xcassets */,
+				632FB82C1D7561A5005D4654 /* LaunchScreen.storyboard */,
+				632FB81F1D7561A5005D4654 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		632FB8351D756248005D4654 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				632FB8361D756248005D4654 /* AppDelegate.h */,
+				632FB8371D756248005D4654 /* AppDelegate.m */,
+				632FB8411D756606005D4654 /* PrefixHeader.pch */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		632FB8391D756286005D4654 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				632FB84B1D756C11005D4654 /* Action */,
+				632FB84C1D756C11005D4654 /* Class */,
+				632FB84F1D756C11005D4654 /* Location */,
+				632FB8501D756C11005D4654 /* Recharge */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		632FB83A1D756286005D4654 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				632FB8451D756689005D4654 /* FinderViewController.h */,
+				632FB8461D756689005D4654 /* FinderViewController.m */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		632FB83B1D756286005D4654 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				632FB8481D756694005D4654 /* PersonViewController.h */,
+				632FB8491D756694005D4654 /* PersonViewController.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		632FB83C1D756563005D4654 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				632FB83D1D756579005D4654 /* MainViewController.h */,
+				632FB83E1D756579005D4654 /* MainViewController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		632FB84B1D756C11005D4654 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		632FB84C1D756C11005D4654 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				632FB84D1D756C11005D4654 /* ClassViewController.h */,
+				632FB84E1D756C11005D4654 /* ClassViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		632FB84F1D756C11005D4654 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		632FB8501D756C11005D4654 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		632FB8521D756FCA005D4654 /* Common Files */ = {
+			isa = PBXGroup;
+			children = (
+				632FB8531D757460005D4654 /* SHNavgationView.h */,
+				632FB8541D757460005D4654 /* SHNavgationView.m */,
+			);
+			path = "Common Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		632FB81A1D7561A5005D4654 /* Guodong4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632FB8321D7561A5005D4654 /* Build configuration list for PBXNativeTarget "Guodong4" */;
+			buildPhases = (
+				632FB8171D7561A5005D4654 /* Sources */,
+				632FB8181D7561A5005D4654 /* Frameworks */,
+				632FB8191D7561A5005D4654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guodong4;
+			productName = Guodong4;
+			productReference = 632FB81B1D7561A5005D4654 /* Guodong4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		632FB8131D7561A5005D4654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hao Sheng";
+				TargetAttributes = {
+					632FB81A1D7561A5005D4654 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W3F8ZLM4DL;
+					};
+				};
+			};
+			buildConfigurationList = 632FB8161D7561A5005D4654 /* Build configuration list for PBXProject "Guodong4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 632FB8121D7561A5005D4654;
+			productRefGroup = 632FB81C1D7561A5005D4654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				632FB81A1D7561A5005D4654 /* Guodong4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		632FB8191D7561A5005D4654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB82E1D7561A5005D4654 /* LaunchScreen.storyboard in Resources */,
+				632FB82B1D7561A5005D4654 /* Assets.xcassets in Resources */,
+				632FB8291D7561A5005D4654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		632FB8171D7561A5005D4654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB8471D756689005D4654 /* FinderViewController.m in Sources */,
+				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
+				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,
+				632FB8201D7561A5005D4654 /* main.m in Sources */,
+				632FB84A1D756694005D4654 /* PersonViewController.m in Sources */,
+				632FB8511D756C11005D4654 /* ClassViewController.m in Sources */,
+				632FB8551D757460005D4654 /* SHNavgationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		632FB8271D7561A5005D4654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				632FB8281D7561A5005D4654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		632FB82C1D7561A5005D4654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				632FB82D1D7561A5005D4654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		632FB8301D7561A5005D4654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		632FB8311D7561A5005D4654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		632FB8331D7561A5005D4654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Guodong4/AppDelegate/PrefixHeader.pch";
+				INFOPLIST_FILE = Guodong4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guodong.user;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		632FB8341D7561A5005D4654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Guodong4/AppDelegate/PrefixHeader.pch";
+				INFOPLIST_FILE = Guodong4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guodong.user;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		632FB8161D7561A5005D4654 /* Build configuration list for PBXProject "Guodong4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB8301D7561A5005D4654 /* Debug */,
+				632FB8311D7561A5005D4654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		632FB8321D7561A5005D4654 /* Build configuration list for PBXNativeTarget "Guodong4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB8331D7561A5005D4654 /* Debug */,
+				632FB8341D7561A5005D4654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 632FB8131D7561A5005D4654 /* Project object */;
+}

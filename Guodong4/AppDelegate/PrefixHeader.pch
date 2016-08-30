@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  Guodong4
+//
+//  Created by mac on 16/8/30.
+//  Copyright © 2016年 Hao Sheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+/**
+ *   项目主背景色
+ */
+#define BASECOLOR [UIColor colorWithRed:  43 / 255.0  \
+green:43 / 255.0  \
+blue: 43 / 255.0  \
+alpha:1]
+
+#define BASEGRYCOLOR [UIColor colorWithRed:  55 / 255.0  \
+green:55 / 255.0  \
+blue: 55 / 255.0  \
+alpha:1]
+
+
+#define ORANGECOLOR [UIColor colorWithRed:  255 / 255.0  \
+green:125 / 255.0  \
+blue: 40 / 255.0  \
+alpha:1]
+
+
+
+
+#import "AppDelegate.h"

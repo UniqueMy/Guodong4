@@ -17,6 +17,9 @@
 		632FB84A1D756694005D4654 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8491D756694005D4654 /* PersonViewController.m */; };
 		632FB8511D756C11005D4654 /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB84E1D756C11005D4654 /* ClassViewController.m */; };
 		632FB8551D757460005D4654 /* SHNavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB8541D757460005D4654 /* SHNavgationView.m */; };
+		635FFC111D76806D00E0CCA6 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC101D76806D00E0CCA6 /* LocationView.m */; };
+		635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */; };
+		635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		632FB84E1D756C11005D4654 /* ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewController.m; sourceTree = "<group>"; };
 		632FB8531D757460005D4654 /* SHNavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavgationView.h; sourceTree = "<group>"; };
 		632FB8541D757460005D4654 /* SHNavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavgationView.m; sourceTree = "<group>"; };
+		635FFC0F1D76806D00E0CCA6 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
+		635FFC101D76806D00E0CCA6 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
+		635FFC171D76AA6C00E0CCA6 /* LocationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewModel.h; sourceTree = "<group>"; };
+		635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewModel.m; sourceTree = "<group>"; };
+		635FFC1A1D76AA8300E0CCA6 /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +170,10 @@
 		632FB84F1D756C11005D4654 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				635FFC0F1D76806D00E0CCA6 /* LocationView.h */,
+				635FFC101D76806D00E0CCA6 /* LocationView.m */,
+				635FFC121D769F2600E0CCA6 /* Model */,
+				635FFC131D769F2600E0CCA6 /* ViewModel */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -179,6 +192,24 @@
 				632FB8541D757460005D4654 /* SHNavgationView.m */,
 			);
 			path = "Common Files";
+			sourceTree = "<group>";
+		};
+		635FFC121D769F2600E0CCA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				635FFC1A1D76AA8300E0CCA6 /* LocationModel.h */,
+				635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		635FFC131D769F2600E0CCA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				635FFC171D76AA6C00E0CCA6 /* LocationViewModel.h */,
+				635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +287,10 @@
 				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
 				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,
 				632FB8201D7561A5005D4654 /* main.m in Sources */,
+				635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */,
 				632FB84A1D756694005D4654 /* PersonViewController.m in Sources */,
+				635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */,
+				635FFC111D76806D00E0CCA6 /* LocationView.m in Sources */,
 				632FB8511D756C11005D4654 /* ClassViewController.m in Sources */,
 				632FB8551D757460005D4654 /* SHNavgationView.m in Sources */,
 			);
@@ -415,6 +449,7 @@
 				632FB8341D7561A5005D4654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

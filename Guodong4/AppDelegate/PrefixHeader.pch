@@ -60,3 +60,10 @@ alpha:1]
 
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
+#import "HttpTool.h"       // 自定义网络请求库
+
+
+
+
+

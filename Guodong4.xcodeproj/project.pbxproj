@@ -20,9 +20,12 @@
 		635FFC111D76806D00E0CCA6 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC101D76806D00E0CCA6 /* LocationView.m */; };
 		635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */; };
 		635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */; };
+		635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */; };
+		CEEF56EE21C20D716039FC76 /* Pods_Guodong4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07DD6A221DC6237CF254ABE0 /* Pods-Guodong4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guodong4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4.release.xcconfig"; sourceTree = "<group>"; };
 		632FB81B1D7561A5005D4654 /* Guodong4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guodong4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FB81F1D7561A5005D4654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		632FB8281D7561A5005D4654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,10 @@
 		635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewModel.m; sourceTree = "<group>"; };
 		635FFC1A1D76AA8300E0CCA6 /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
 		635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
+		635FFC1D1D76DE3400E0CCA6 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guodong4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43347C7BD6813AE33F6A2C7 /* Pods-Guodong4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guodong4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF56EE21C20D716039FC76 /* Pods_Guodong4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CFAF9531A7DB80B2E09B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		632FB8121D7561A5005D4654 = {
 			isa = PBXGroup;
 			children = (
 				632FB81D1D7561A5005D4654 /* Guodong4 */,
 				632FB81C1D7561A5005D4654 /* Products */,
+				A3D8B00905274AA0589C0A96 /* Pods */,
+				11CFAF9531A7DB80B2E09B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +208,8 @@
 			children = (
 				632FB8531D757460005D4654 /* SHNavgationView.h */,
 				632FB8541D757460005D4654 /* SHNavgationView.m */,
+				635FFC1D1D76DE3400E0CCA6 /* HttpTool.h */,
+				635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */,
 			);
 			path = "Common Files";
 			sourceTree = "<group>";
@@ -212,6 +232,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A3D8B00905274AA0589C0A96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B43347C7BD6813AE33F6A2C7 /* Pods-Guodong4.debug.xcconfig */,
+				07DD6A221DC6237CF254ABE0 /* Pods-Guodong4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 632FB8321D7561A5005D4654 /* Build configuration list for PBXNativeTarget "Guodong4" */;
 			buildPhases = (
+				3A9DC5AD2D23B07F0C7F7087 /* [CP] Check Pods Manifest.lock */,
 				632FB8171D7561A5005D4654 /* Sources */,
 				632FB8181D7561A5005D4654 /* Frameworks */,
 				632FB8191D7561A5005D4654 /* Resources */,
+				F0D5072E5B0EF243C201C7B7 /* [CP] Embed Pods Frameworks */,
+				EE0CF0EB02E07B73CBC74517 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,6 +310,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A9DC5AD2D23B07F0C7F7087 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0CF0EB02E07B73CBC74517 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D5072E5B0EF243C201C7B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		632FB8171D7561A5005D4654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,6 +371,7 @@
 				632FB84A1D756694005D4654 /* PersonViewController.m in Sources */,
 				635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */,
 				635FFC111D76806D00E0CCA6 /* LocationView.m in Sources */,
+				635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */,
 				632FB8511D756C11005D4654 /* ClassViewController.m in Sources */,
 				632FB8551D757460005D4654 /* SHNavgationView.m in Sources */,
 			);
@@ -402,6 +483,7 @@
 		};
 		632FB8331D7561A5005D4654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43347C7BD6813AE33F6A2C7 /* Pods-Guodong4.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -417,6 +499,7 @@
 		};
 		632FB8341D7561A5005D4654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07DD6A221DC6237CF254ABE0 /* Pods-Guodong4.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

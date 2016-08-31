@@ -10,6 +10,6 @@
 
 @interface LocationModel : LocationViewModel
 
-- (void)startLocation;
+- (void)startRequestCityNameWithLocationDict:(NSDictionary *)dict;
 
 @end

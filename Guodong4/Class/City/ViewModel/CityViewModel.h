@@ -1,16 +1,16 @@
 //
-//  LocationViewModel.h
+//  CityViewModel.h
 //  Guodong4
 //
-//  Created by mac on 16/8/31.
+//  Created by mac on 16/9/1.
 //  Copyright © 2016年 Hao Sheng. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ReturnValueBlock) (id returnValue);
+typedef void (^ReturnValueBlock)(id Value);
 
-@interface LocationViewModel : NSObject
+@interface CityViewModel : NSObject
 
 @property (nonatomic,strong) ReturnValueBlock returnBlock;
 

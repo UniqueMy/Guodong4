@@ -9,10 +9,10 @@
 #import "AppDelegate.h"
 
 #import "MainViewController.h"
-
+#import <CoreLocation/CLLocationManagerDelegate.h>
 
 @interface AppDelegate ()
-
+@property (nonatomic,strong) CLLocationManager *locationManager;
 @end
 
 @implementation AppDelegate
@@ -29,16 +29,18 @@
     
     if ([version isEqualToString:saveVersion]) {
         
-        MainViewController* main = [MainViewController new];
+        MainViewController* main = [[MainViewController alloc] init];
         self.window.rootViewController = main;
         
     } else {
         
         [[NSUserDefaults standardUserDefaults] setObject:version forKey:key];
         [[NSUserDefaults standardUserDefaults] synchronize];
-      //  self.window.rootViewController = [RegisterViewController new];
+        MainViewController* main = [[MainViewController alloc] init];
+        self.window.rootViewController = main;
+      //  self.window.rootViewController = [[RegisterViewController alloc] init];
     }
-
+ 
     
     return YES;
 }

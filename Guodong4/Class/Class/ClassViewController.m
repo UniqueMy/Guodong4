@@ -8,10 +8,12 @@
 
 #import "ClassViewController.h"
 #import "LocationView.h"
+#import "CityViewController.h"
 @interface ClassViewController ()
 
 @property (nonatomic,strong) UIView       *navigationView;
 @property (nonatomic,strong) LocationView *locationView;
+@property (nonatomic)        BOOL          allow;
 
 @end
 
@@ -19,22 +21,43 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-     [self.locationView startAnimation];
+    [self.locationView startAnimation];
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setNavigationView];
-   
+    self.view.backgroundColor = BASECOLOR;
     
+    
+    __weak ClassViewController *class = self;
+    
+    // 模态提示框
+    self.locationView.PresentViewController = ^(UIAlertController *alert) {
+        
+        [class presentViewController:alert animated:YES completion:nil];
+    };
+    
+    // Push到CityViewController
+    self.locationView.PushCityViewController = ^(NSString *city) {
+        
+        CityViewController *cityVC = [[CityViewController alloc] init];
+        cityVC.cityName            = city;
+        [class.navigationController pushViewController:cityVC animated:YES];
+        
+    };
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(allow:) name:@"allow" object:nil];
 }
 
 
 #pragma mark -- 懒加载
 - (UIView *)navigationView {
     if (!_navigationView) {
-        _navigationView                 = [UIView new];
+        _navigationView                 = [[UIView alloc] init];
         _navigationView.frame           = CGRectMake(0, 0, viewWidth, NavigationBar_Height + Status_height);
         _navigationView.backgroundColor = ORANGECOLOR;
         [self.view addSubview:_navigationView];
@@ -44,7 +67,7 @@
 
 - (LocationView *)locationView {
     if (!_locationView) {
-        _locationView       = [LocationView new];
+        _locationView       = [[LocationView alloc] init];
         _locationView.frame = CGRectMake(Space_Width,
                                          Status_height + (NavigationBar_Height - Adaptive(20)) / 2,
                                          Adaptive(80),
@@ -56,10 +79,8 @@
 
 #pragma mark -- 构建导航条
 - (void)setNavigationView {
-   
-   
     
-    UIImageView* titleImage = [UIImageView new];
+    UIImageView* titleImage = [[UIImageView alloc] init];
     titleImage.frame        = CGRectMake((viewWidth - Adaptive(51.6)) / 2,
                                          Status_height + (NavigationBar_Height - Adaptive(27)) / 2,
                                          Adaptive(51.6),
@@ -77,6 +98,13 @@
     [photoButton addTarget:self action:@selector(telePhoneClick:) forControlEvents:UIControlEventTouchUpInside];
     [_navigationView addSubview:photoButton];
     
+    
+    
+}
+
+- (void)allow:(NSNotification *)notification {
+    _allow = [[notification.userInfo objectForKey:@"allow"] boolValue];
+    NSLog(@"_allow %d",_allow);
 }
 
 // 客服

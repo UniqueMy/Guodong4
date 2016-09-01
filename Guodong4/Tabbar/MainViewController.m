@@ -27,23 +27,23 @@
     AppDelegate *app = [UIApplication sharedApplication].delegate;
     
     // 初始化一个tabBar控制器
-    UITabBarController *tabbar    = [UITabBarController new];
+    UITabBarController *tabbar    = [[UITabBarController alloc] init];
     [[UITabBar appearance] setBarTintColor:BASECOLOR]; // 修改背景颜色
     [[UITabBar appearance] setTintColor:ORANGECOLOR];  // 修改点击后的颜色
     
     
-    ClassViewController *classVC     = [ClassViewController new];
+    ClassViewController *classVC     = [[ClassViewController alloc] init];
     classVC.tabBarItem.title         = @"课程";
     classVC.tabBarItem.image         = [UIImage imageNamed:@"tabbarGry_1"];
     classVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbarOrange_1"];
     
     
-    FinderViewController *finderVC    = [FinderViewController new];
+    FinderViewController *finderVC    = [[FinderViewController alloc] init];
     finderVC.tabBarItem.title         = @"发现";
     finderVC.tabBarItem.image         = [UIImage imageNamed:@"tabbarGry_2"];
     finderVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbarOrange_2"];
     
-    PersonViewController *personVC    = [PersonViewController new];
+    PersonViewController *personVC    = [[PersonViewController alloc] init];
     personVC.tabBarItem.title         = @"个人";
     personVC.tabBarItem.image         = [UIImage imageNamed:@"tabbarGry_3"];
     personVC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbarOrange_3"];

@@ -15,4 +15,7 @@ typedef void (^FailBlock)(NSError* error);
 
 @interface HttpTool : NSObject
 
++ (void)postWithUrl:(NSString*)urlStr params:(NSDictionary*)params body:(NSArray *)body progress:(ProgressBlock)progress success:(SuccessBlock)success;
+
+
 @end

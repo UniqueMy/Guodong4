@@ -45,13 +45,12 @@
             
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
             
-            // dict 返回的数据 包括有rc和没有rc的情况
-            
+             
             
             
             // 任何情况 返回数据 并打印数据
             success(dict);
-            NSLog(@"打印 URL %@  DICT %@",urlStr,dict);
+            NSLog(@"打印 URL %@  Data %@",urlStr,dict);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630B7D511D7803FD00DFC592 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D501D7803FD00DFC592 /* CityViewController.m */; };
+		630B7D591D78232E00DFC592 /* CityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D581D78232E00DFC592 /* CityViewModel.m */; };
+		630B7D5C1D78234600DFC592 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D5B1D78234600DFC592 /* CityModel.m */; };
+		630B7D5F1D78273300DFC592 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D5E1D78273300DFC592 /* CityCell.m */; };
+		630B7D621D7827D700DFC592 /* CityHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D611D7827D700DFC592 /* CityHeadView.m */; };
 		632FB8201D7561A5005D4654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB81F1D7561A5005D4654 /* main.m */; };
 		632FB8291D7561A5005D4654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB8271D7561A5005D4654 /* Main.storyboard */; };
 		632FB82B1D7561A5005D4654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FB82A1D7561A5005D4654 /* Assets.xcassets */; };
@@ -26,6 +31,16 @@
 
 /* Begin PBXFileReference section */
 		07DD6A221DC6237CF254ABE0 /* Pods-Guodong4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guodong4.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4.release.xcconfig"; sourceTree = "<group>"; };
+		630B7D4F1D7803FD00DFC592 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		630B7D501D7803FD00DFC592 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		630B7D571D78232E00DFC592 /* CityViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewModel.h; sourceTree = "<group>"; };
+		630B7D581D78232E00DFC592 /* CityViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewModel.m; sourceTree = "<group>"; };
+		630B7D5A1D78234600DFC592 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		630B7D5B1D78234600DFC592 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		630B7D5D1D78273300DFC592 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		630B7D5E1D78273300DFC592 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		630B7D601D7827D700DFC592 /* CityHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHeadView.h; sourceTree = "<group>"; };
+		630B7D611D7827D700DFC592 /* CityHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHeadView.m; sourceTree = "<group>"; };
 		632FB81B1D7561A5005D4654 /* Guodong4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guodong4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FB81F1D7561A5005D4654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		632FB8281D7561A5005D4654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +90,39 @@
 				74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		630B7D4E1D7803F000DFC592 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				630B7D4F1D7803FD00DFC592 /* CityViewController.h */,
+				630B7D501D7803FD00DFC592 /* CityViewController.m */,
+				630B7D601D7827D700DFC592 /* CityHeadView.h */,
+				630B7D611D7827D700DFC592 /* CityHeadView.m */,
+				630B7D5D1D78273300DFC592 /* CityCell.h */,
+				630B7D5E1D78273300DFC592 /* CityCell.m */,
+				630B7D521D7822F200DFC592 /* Model */,
+				630B7D531D7822F200DFC592 /* ViewModel */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		630B7D521D7822F200DFC592 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				630B7D5A1D78234600DFC592 /* CityModel.h */,
+				630B7D5B1D78234600DFC592 /* CityModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		630B7D531D7822F200DFC592 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				630B7D571D78232E00DFC592 /* CityViewModel.h */,
+				630B7D581D78232E00DFC592 /* CityViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		632FB8121D7561A5005D4654 = {
@@ -134,6 +182,7 @@
 		632FB8391D756286005D4654 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				630B7D4E1D7803F000DFC592 /* City */,
 				632FB84B1D756C11005D4654 /* Action */,
 				632FB84C1D756C11005D4654 /* Class */,
 				632FB84F1D756C11005D4654 /* Location */,
@@ -364,8 +413,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				632FB8471D756689005D4654 /* FinderViewController.m in Sources */,
+				630B7D5F1D78273300DFC592 /* CityCell.m in Sources */,
 				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
+				630B7D591D78232E00DFC592 /* CityViewModel.m in Sources */,
 				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,
+				630B7D5C1D78234600DFC592 /* CityModel.m in Sources */,
+				630B7D511D7803FD00DFC592 /* CityViewController.m in Sources */,
 				632FB8201D7561A5005D4654 /* main.m in Sources */,
 				635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */,
 				632FB84A1D756694005D4654 /* PersonViewController.m in Sources */,
@@ -374,6 +427,7 @@
 				635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */,
 				632FB8511D756C11005D4654 /* ClassViewController.m in Sources */,
 				632FB8551D757460005D4654 /* SHNavgationView.m in Sources */,
+				630B7D621D7827D700DFC592 /* CityHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

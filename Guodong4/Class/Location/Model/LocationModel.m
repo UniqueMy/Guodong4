@@ -7,7 +7,7 @@
 //
 
 #import "LocationModel.h"
-#import "ClassModel.h"
+#import "ClassPublicModel.h"
 
 @interface LocationModel ()
 
@@ -33,11 +33,11 @@
  
     NSString *city_code = [NSString stringWithFormat:@"%@",[[dict objectForKey:@"city"] objectForKey:@"city_code"]];
   
-    ClassModel *classModel  = [[ClassModel alloc] init];
-    classModel.now_CityName = [[dict objectForKey:@"city"] objectForKey:@"name"];
-    classModel.is_allowed   = [[dict objectForKey:@"allowd"] containsObject:city_code] ? YES : NO;
+    ClassPublicModel *classPublicModel  = [[ClassPublicModel alloc] init];
+    classPublicModel.now_CityName = [[dict objectForKey:@"city"] objectForKey:@"name"];
+    classPublicModel.is_allowed   = [[dict objectForKey:@"allowd"] containsObject:city_code] ? YES : NO;
     
-    self.returnBlock(classModel);
+    self.returnBlock(classPublicModel);
 }
 
 @end

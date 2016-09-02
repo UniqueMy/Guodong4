@@ -10,7 +10,7 @@
 #import "LocationModel.h"
 
 #import "ClassViewController.h"
-#import "ClassModel.h"
+#import "ClassPublicModel.h"
 
 #import <CoreLocation/CLLocationManagerDelegate.h>
 #import <CoreLocation/CoreLocation.h>
@@ -29,7 +29,7 @@
 
 @implementation LocationView
 {
-    ClassModel *classModel;
+    ClassPublicModel *classPublicModel;
 }
 #pragma mark -- 各类控件的懒加载
 
@@ -88,14 +88,14 @@
     self = [super init];
     if (self) {
         
-        [self createUI];
+        [self createMainView];
         [self startLocation];
         
     }
     return self;
 }
 
-- (void)createUI {
+- (void)createMainView {
     
     [self locationLabel];
     [self locationButton];
@@ -163,13 +163,13 @@
         
         [locationModel setBlockWithReturnBlock:^(id returnValue) {
             
-            classModel          = returnValue;
+            classPublicModel          = returnValue;
             _locationStatus     = YES;
-            _locationLabel.text = classModel.now_CityName ? classModel.now_CityName : @"定位中";
+            _locationLabel.text = classPublicModel.now_CityName ? classPublicModel.now_CityName : @"定位中";
             
-            if (classModel.is_allowed) [self.topImageView.layer removeAllAnimations];
+            if (classPublicModel.is_allowed) [self.topImageView.layer removeAllAnimations];
             
-            NSDictionary *allowDict      = @{@"allow":[NSNumber numberWithBool:classModel.is_allowed]};
+            NSDictionary *allowDict      = @{@"allow":[NSNumber numberWithBool:classPublicModel.is_allowed]};
             NSNotification *notification = [NSNotification notificationWithName:@"allow" object:nil userInfo:allowDict];
             [[NSNotificationCenter defaultCenter] postNotification:notification];
             
@@ -181,7 +181,7 @@
 
 - (void)startAnimation {
     
-    if (!classModel.is_allowed) {
+    if (!classPublicModel.is_allowed) {
         CABasicAnimation* basic =
         [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
         basic.fromValue   = [NSNumber numberWithFloat:0];
@@ -213,7 +213,7 @@
         
     } else {
         
-        self.PushCityViewController(classModel.now_CityName);
+        self.PushCityViewController(classPublicModel.now_CityName);
     }
 }
 

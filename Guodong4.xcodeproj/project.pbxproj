@@ -26,7 +26,11 @@
 		635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */; };
 		635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */; };
 		635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */; };
-		63A51CA41D79146200BD1E05 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CA31D79146200BD1E05 /* ClassModel.m */; };
+		63A51CA41D79146200BD1E05 /* ClassPublicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CA31D79146200BD1E05 /* ClassPublicModel.m */; };
+		63A51CAD1D79229F00BD1E05 /* ClassTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CAB1D79229F00BD1E05 /* ClassTableView.m */; };
+		63A51CB01D79234E00BD1E05 /* ClassTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CAF1D79234E00BD1E05 /* ClassTableHeadView.m */; };
+		63A51CB31D79466200BD1E05 /* ClassViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CB21D79466200BD1E05 /* ClassViewModel.m */; };
+		63A51CB61D7947F000BD1E05 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CB51D7947F000BD1E05 /* ClassModel.m */; };
 		CEEF56EE21C20D716039FC76 /* Pods_Guodong4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +73,16 @@
 		635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
 		635FFC1D1D76DE3400E0CCA6 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
-		63A51CA21D79146200BD1E05 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
-		63A51CA31D79146200BD1E05 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
+		63A51CA21D79146200BD1E05 /* ClassPublicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPublicModel.h; sourceTree = "<group>"; };
+		63A51CA31D79146200BD1E05 /* ClassPublicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPublicModel.m; sourceTree = "<group>"; };
+		63A51CAA1D79229F00BD1E05 /* ClassTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableView.h; sourceTree = "<group>"; };
+		63A51CAB1D79229F00BD1E05 /* ClassTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableView.m; sourceTree = "<group>"; };
+		63A51CAE1D79234E00BD1E05 /* ClassTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableHeadView.h; sourceTree = "<group>"; };
+		63A51CAF1D79234E00BD1E05 /* ClassTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableHeadView.m; sourceTree = "<group>"; };
+		63A51CB11D79466200BD1E05 /* ClassViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewModel.h; sourceTree = "<group>"; };
+		63A51CB21D79466200BD1E05 /* ClassViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassViewModel.m; sourceTree = "<group>"; };
+		63A51CB41D7947F000BD1E05 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		63A51CB51D7947F000BD1E05 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guodong4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43347C7BD6813AE33F6A2C7 /* Pods-Guodong4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guodong4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,10 +199,10 @@
 			children = (
 				63A51CA11D79145200BD1E05 /* PublicModel */,
 				630B7D4E1D7803F000DFC592 /* City */,
-				632FB84B1D756C11005D4654 /* Action */,
-				632FB84C1D756C11005D4654 /* Class */,
 				632FB84F1D756C11005D4654 /* Location */,
+				632FB84B1D756C11005D4654 /* Action */,
 				632FB8501D756C11005D4654 /* Recharge */,
+				632FB84C1D756C11005D4654 /* Class */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -234,6 +246,9 @@
 			children = (
 				632FB84D1D756C11005D4654 /* ClassViewController.h */,
 				632FB84E1D756C11005D4654 /* ClassViewController.m */,
+				63A51CA91D79229F00BD1E05 /* View */,
+				63A51CA81D79229F00BD1E05 /* Model */,
+				63A51CAC1D79229F00BD1E05 /* ViewModel */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -288,10 +303,39 @@
 		63A51CA11D79145200BD1E05 /* PublicModel */ = {
 			isa = PBXGroup;
 			children = (
-				63A51CA21D79146200BD1E05 /* ClassModel.h */,
-				63A51CA31D79146200BD1E05 /* ClassModel.m */,
+				63A51CA21D79146200BD1E05 /* ClassPublicModel.h */,
+				63A51CA31D79146200BD1E05 /* ClassPublicModel.m */,
 			);
 			path = PublicModel;
+			sourceTree = "<group>";
+		};
+		63A51CA81D79229F00BD1E05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63A51CB41D7947F000BD1E05 /* ClassModel.h */,
+				63A51CB51D7947F000BD1E05 /* ClassModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63A51CA91D79229F00BD1E05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A51CAA1D79229F00BD1E05 /* ClassTableView.h */,
+				63A51CAB1D79229F00BD1E05 /* ClassTableView.m */,
+				63A51CAE1D79234E00BD1E05 /* ClassTableHeadView.h */,
+				63A51CAF1D79234E00BD1E05 /* ClassTableHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63A51CAC1D79229F00BD1E05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63A51CB11D79466200BD1E05 /* ClassViewModel.h */,
+				63A51CB21D79466200BD1E05 /* ClassViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A3D8B00905274AA0589C0A96 /* Pods */ = {
@@ -426,13 +470,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				632FB8471D756689005D4654 /* FinderViewController.m in Sources */,
+				63A51CB31D79466200BD1E05 /* ClassViewModel.m in Sources */,
 				630B7D5F1D78273300DFC592 /* CityCell.m in Sources */,
-				63A51CA41D79146200BD1E05 /* ClassModel.m in Sources */,
+				63A51CA41D79146200BD1E05 /* ClassPublicModel.m in Sources */,
 				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
 				630B7D591D78232E00DFC592 /* CityViewModel.m in Sources */,
 				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,
 				630B7D5C1D78234600DFC592 /* CityModel.m in Sources */,
 				630B7D511D7803FD00DFC592 /* CityViewController.m in Sources */,
+				63A51CAD1D79229F00BD1E05 /* ClassTableView.m in Sources */,
 				632FB8201D7561A5005D4654 /* main.m in Sources */,
 				635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */,
 				632FB84A1D756694005D4654 /* PersonViewController.m in Sources */,
@@ -440,8 +486,10 @@
 				635FFC111D76806D00E0CCA6 /* LocationView.m in Sources */,
 				635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */,
 				632FB8511D756C11005D4654 /* ClassViewController.m in Sources */,
+				63A51CB01D79234E00BD1E05 /* ClassTableHeadView.m in Sources */,
 				632FB8551D757460005D4654 /* SHNavgationView.m in Sources */,
 				630B7D621D7827D700DFC592 /* CityHeadView.m in Sources */,
+				63A51CB61D7947F000BD1E05 /* ClassModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

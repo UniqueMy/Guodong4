@@ -7,7 +7,7 @@
 //
 
 #import "CityModel.h"
-#import "ClassModel.h"
+#import "ClassPublicModel.h"
 
 @implementation CityModel
 
@@ -29,9 +29,9 @@
     NSArray *cityArray         = [dict objectForKey:@"all_citys"];
     
     for (NSString *allow_CityName in cityArray) {
-        ClassModel *classModel    = [[ClassModel alloc] init];
-        classModel.allow_CityName = allow_CityName;
-        [modelArray addObject:classModel];
+        ClassPublicModel *classPublicModel    = [[ClassPublicModel alloc] init];
+        classPublicModel.allow_CityName = allow_CityName;
+        [modelArray addObject:classPublicModel];
     }
     
     self.returnBlock(modelArray);

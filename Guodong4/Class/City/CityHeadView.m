@@ -23,7 +23,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        [self createUI];
+        [self createMainView];
     }
     return self;
 }
@@ -63,7 +63,7 @@
     
 }
 
-- (void)createUI {
+- (void)createMainView {
     
     self.backgroundColor = BASECOLOR;
     

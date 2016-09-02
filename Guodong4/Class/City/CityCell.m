@@ -66,9 +66,9 @@
     
 }
 
-- (void)setValueWithModel:(ClassModel *)classModel {
+- (void)setValueWithModel:(ClassPublicModel *)classPublicModel {
     
-    self.cityLabel.text = classModel.allow_CityName;
+    self.cityLabel.text = classPublicModel.allow_CityName;
 }
 
 @end

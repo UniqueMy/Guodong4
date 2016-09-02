@@ -9,11 +9,14 @@
 #import "ClassViewController.h"
 #import "LocationView.h"
 #import "CityViewController.h"
+#import "ClassTableView.h"
 @interface ClassViewController ()
 
-@property (nonatomic,strong) UIView       *navigationView;
-@property (nonatomic,strong) LocationView *locationView;
-@property (nonatomic)        BOOL          allow;
+@property (nonatomic,strong) UIView         *navigationView;
+@property (nonatomic,strong) LocationView   *locationView;
+@property (nonatomic,strong) ClassTableView *classView;
+@property (nonatomic)        BOOL            allow;
+
 
 @end
 
@@ -28,9 +31,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setNavigationView];
     self.view.backgroundColor = BASECOLOR;
     
+    // 构建导航条
+    [self setNavigationView];
+    
+    // 构建主界面
+    [self createMainView];
     
     __weak ClassViewController *class = self;
     
@@ -77,6 +84,18 @@
     return _locationView;
 }
 
+- (ClassTableView *)classView {
+    if (!_classView) {
+        _classView       = [[ClassTableView alloc] init];
+        _classView.frame = CGRectMake(0, Status_height + NavigationBar_Height,
+                                      viewWidth,
+                                      viewHeight - Status_height - NavigationBar_Height - Tabbar_Height);
+        _classView.backgroundColor = BASECOLOR;
+        [self.view addSubview:_classView];
+    }
+    return _classView;
+}
+
 #pragma mark -- 构建导航条
 - (void)setNavigationView {
     
@@ -109,11 +128,16 @@
 
 // 客服
 - (void)telePhoneClick:(UIButton *)button {
-    NSMutableString* str = [[NSMutableString alloc] initWithFormat:@"tel:%@",KEFU];
+    NSMutableString* str   = [[NSMutableString alloc] initWithFormat:@"tel:%@",KEFU];
     UIWebView* callWebview = [[UIWebView alloc] init];
-    
     [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
-    
     [self.view addSubview:callWebview];
 }
+
+#pragma mark -- 构建主界面
+- (void)createMainView {
+    
+    [self classView];
+}
+
 @end

@@ -1,5 +1,5 @@
 //
-//  ClassModel.h
+//  ClassPublicModel.h
 //  Guodong4
 //
 //  Created by mac on 16/9/2.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ClassModel : NSObject
+@interface ClassPublicModel : NSObject
 
 // 定位
 @property (nonatomic,strong) NSString *allow_CityName;

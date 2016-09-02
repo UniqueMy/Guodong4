@@ -26,6 +26,7 @@
 		635FFC191D76AA6C00E0CCA6 /* LocationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */; };
 		635FFC1C1D76AA8300E0CCA6 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */; };
 		635FFC1F1D76DE3400E0CCA6 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */; };
+		63A51CA41D79146200BD1E05 /* ClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A51CA31D79146200BD1E05 /* ClassModel.m */; };
 		CEEF56EE21C20D716039FC76 /* Pods_Guodong4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		635FFC1B1D76AA8300E0CCA6 /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
 		635FFC1D1D76DE3400E0CCA6 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		635FFC1E1D76DE3400E0CCA6 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		63A51CA21D79146200BD1E05 /* ClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassModel.h; sourceTree = "<group>"; };
+		63A51CA31D79146200BD1E05 /* ClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassModel.m; sourceTree = "<group>"; };
 		74C5505BBEB966DBB3337BF9 /* Pods_Guodong4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guodong4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43347C7BD6813AE33F6A2C7 /* Pods-Guodong4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guodong4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guodong4/Pods-Guodong4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +185,7 @@
 		632FB8391D756286005D4654 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				63A51CA11D79145200BD1E05 /* PublicModel */,
 				630B7D4E1D7803F000DFC592 /* City */,
 				632FB84B1D756C11005D4654 /* Action */,
 				632FB84C1D756C11005D4654 /* Class */,
@@ -279,6 +283,15 @@
 				635FFC181D76AA6C00E0CCA6 /* LocationViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63A51CA11D79145200BD1E05 /* PublicModel */ = {
+			isa = PBXGroup;
+			children = (
+				63A51CA21D79146200BD1E05 /* ClassModel.h */,
+				63A51CA31D79146200BD1E05 /* ClassModel.m */,
+			);
+			path = PublicModel;
 			sourceTree = "<group>";
 		};
 		A3D8B00905274AA0589C0A96 /* Pods */ = {
@@ -414,6 +427,7 @@
 			files = (
 				632FB8471D756689005D4654 /* FinderViewController.m in Sources */,
 				630B7D5F1D78273300DFC592 /* CityCell.m in Sources */,
+				63A51CA41D79146200BD1E05 /* ClassModel.m in Sources */,
 				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
 				630B7D591D78232E00DFC592 /* CityViewModel.m in Sources */,
 				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,

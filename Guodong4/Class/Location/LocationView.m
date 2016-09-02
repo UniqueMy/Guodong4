@@ -10,6 +10,7 @@
 #import "LocationModel.h"
 
 #import "ClassViewController.h"
+#import "ClassModel.h"
 
 #import <CoreLocation/CLLocationManagerDelegate.h>
 #import <CoreLocation/CoreLocation.h>
@@ -27,7 +28,9 @@
 @end
 
 @implementation LocationView
-
+{
+    ClassModel *classModel;
+}
 #pragma mark -- 各类控件的懒加载
 
 - (UIImageView *)topImageView {
@@ -159,13 +162,14 @@
         LocationModel *locationModel = [[LocationModel alloc] init];
         
         [locationModel setBlockWithReturnBlock:^(id returnValue) {
-            _allow = [[returnValue objectForKey:@"allow"] boolValue];
-            _city  = [returnValue objectForKey:@"city"];
-            _locationStatus     = YES;
-            _locationLabel.text = _city ?_city : @"定位中";
-            if (_allow) [self.topImageView.layer removeAllAnimations];
             
-            NSDictionary *allowDict      = @{@"allow":[NSNumber numberWithBool:_allow]};
+            classModel          = returnValue;
+            _locationStatus     = YES;
+            _locationLabel.text = classModel.now_CityName ? classModel.now_CityName : @"定位中";
+            
+            if (classModel.is_allowed) [self.topImageView.layer removeAllAnimations];
+            
+            NSDictionary *allowDict      = @{@"allow":[NSNumber numberWithBool:classModel.is_allowed]};
             NSNotification *notification = [NSNotification notificationWithName:@"allow" object:nil userInfo:allowDict];
             [[NSNotificationCenter defaultCenter] postNotification:notification];
             
@@ -177,7 +181,7 @@
 
 - (void)startAnimation {
     
-    if (!_allow) {
+    if (!classModel.is_allowed) {
         CABasicAnimation* basic =
         [CABasicAnimation animationWithKeyPath:@"transform.rotation.y"];
         basic.fromValue   = [NSNumber numberWithFloat:0];
@@ -209,7 +213,7 @@
         
     } else {
         
-        self.PushCityViewController(_city);
+        self.PushCityViewController(classModel.now_CityName);
     }
 }
 

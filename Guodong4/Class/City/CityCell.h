@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClassModel.h"
 
 @interface CityCell : UITableViewCell
+
+- (void)setValueWithModel:(ClassModel *)classModel;
 
 @end

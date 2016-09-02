@@ -7,6 +7,7 @@
 //
 
 #import "CityModel.h"
+#import "ClassModel.h"
 
 @implementation CityModel
 
@@ -24,8 +25,16 @@
 
 - (void)getDataSuccessWithDict:(NSDictionary *)dict {
     
-    NSArray *cityArray = [dict objectForKey:@"all_citys"];
-    self.returnBlock(cityArray);
+    NSMutableArray *modelArray = [NSMutableArray array];
+    NSArray *cityArray         = [dict objectForKey:@"all_citys"];
+    
+    for (NSString *allow_CityName in cityArray) {
+        ClassModel *classModel    = [[ClassModel alloc] init];
+        classModel.allow_CityName = allow_CityName;
+        [modelArray addObject:classModel];
+    }
+    
+    self.returnBlock(modelArray);
     
 }
 

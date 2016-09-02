@@ -28,11 +28,15 @@
                                   viewWidth,
                                   viewHeight - Status_height - NavigationBar_Height);
         _tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
-        _tableView.delegate   = self;
-        _tableView.dataSource = self;
+        _tableView.delegate        = self;
+        _tableView.dataSource      = self;
+        _tableView.backgroundColor = BASECOLOR;
+        _tableView.rowHeight       = Adaptive(70);
+        _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        _tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:_tableView];
         
-    }
+    } 
     return _tableView;
 }
 
@@ -74,7 +78,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 100;
+    return Adaptive(70);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,6 +91,7 @@
         cityCell = [[CityCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
     }
     
+    [cityCell setValueWithModel:_dataArray[indexPath.row]];
     return cityCell;
     
 }

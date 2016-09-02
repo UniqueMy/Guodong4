@@ -10,9 +10,6 @@
 
 @interface LocationView : UIView
 
-@property (nonatomic,strong) NSString *city;
-@property (nonatomic)        BOOL      allow;
-
 // 模态提示框
 @property (nonatomic,copy)   void(^PresentViewController)(UIAlertController *alertController);
 

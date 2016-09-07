@@ -14,13 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - SDCycleScrollView (1.62):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - SDCycleScrollView (~> 1.62)
+  - SDWebImage (~> 3.7.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  SDCycleScrollView: ae016cb4cc4036523917f146ede6f7b11d408f6a
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-PODFILE CHECKSUM: dc01f4750a04ecde50944b4f72aee6ec894813cd
+PODFILE CHECKSUM: 0d2d07fcf09a47bc9ac813983bb169326e7d5270
 
 COCOAPODS: 1.0.1

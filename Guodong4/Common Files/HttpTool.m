@@ -10,7 +10,7 @@
 
 @implementation HttpTool
 
-+ (void)postWithUrl:(NSString*)urlStr params:(NSDictionary*)params body:(NSArray *)body progress:(ProgressBlock)progress success:(SuccessBlock)success
++ (void)postWithUrl:(NSString*)urlStr params:(NSDictionary*)params body:(NSArray *)body progress:(ProgressBlock)progress success:(SuccessBlock)success 
 {
     // 初始化Manager
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];

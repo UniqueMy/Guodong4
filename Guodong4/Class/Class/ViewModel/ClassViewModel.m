@@ -10,4 +10,12 @@
 
 @implementation ClassViewModel
 
+- (void)setBannerModelWithReturnBlock:(BannerModelBlock)BannerModelBlock BannerImageBlock:(BannerImageBlock)BannerImageBlock Class:(ClassValueBlock)ClassBlock {
+    
+    _BannerModelBlock = BannerModelBlock;
+    _ClassBlock = ClassBlock;
+    _BannerImageBlock = BannerImageBlock;
+}
+
+
 @end

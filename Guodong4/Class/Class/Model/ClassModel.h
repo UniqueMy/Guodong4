@@ -10,4 +10,8 @@
 
 @interface ClassModel : ClassViewModel
 
++ (instancetype)sharedViewManager;
+
+- (void)startRequest;
+
 @end

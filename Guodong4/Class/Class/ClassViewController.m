@@ -10,6 +10,7 @@
 #import "LocationView.h"
 #import "CityViewController.h"
 #import "ClassTableView.h"
+
 @interface ClassViewController ()
 
 @property (nonatomic,strong) UIView         *navigationView;
@@ -138,6 +139,7 @@
 - (void)createMainView {
     
     [self classView];
+    
 }
 
 @end

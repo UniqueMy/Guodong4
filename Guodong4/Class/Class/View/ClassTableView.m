@@ -6,11 +6,18 @@
 //  Copyright © 2016年 Hao Sheng. All rights reserved.
 //
 
+#define Head_Height Adaptive(160)
+
 #import "ClassTableView.h"
 #import "ClassTableHeadView.h"
+#import "ClassModel.h"
 @interface ClassTableView ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong) UITableView  *tableView;
+@property (nonatomic,strong) UITableView        *tableView;
+@property (nonatomic,strong) ClassTableHeadView *headView;
+@property (nonatomic,strong) NSMutableArray     *bannerArray;
+@property (nonatomic,strong) NSMutableArray     *classArray;
+
 
 @end
 
@@ -18,6 +25,16 @@
 
 
 #pragma mark -- 懒加载
+
+- (ClassTableHeadView *)headView {
+    if (!_headView) {
+        _headView       = [[ClassTableHeadView alloc] init];
+        _headView.frame = CGRectMake(0, 0, viewWidth, Head_Height);
+        
+    }
+    return _headView;
+}
+
 - (UITableView *)tableView {
     if (!_tableView) {
         
@@ -43,33 +60,31 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self tableView];
+        
+        
+        ClassModel *classModel = [ClassModel sharedViewManager];
+        [classModel setBannerModelWithReturnBlock:^(id Value) {
+            
+        } BannerImageBlock:^(id Value) {
+            
+        } Class:^(id Value) {
+            NSLog(@"Class %@",Value);
+        }];
+        [classModel startRequest];
     }
     return self;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
-    ClassTableHeadView *headView = [[ClassTableHeadView alloc] init];
-    
-    return headView;
+    return self.headView;
     
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return Adaptive(165);
+    return Head_Height;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    
-    CGFloat sectionHeaderHeight = Adaptive(165);//设置你header高度
-    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
-        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
-    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
-        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
-    }
-    
-}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

@@ -15,4 +15,15 @@
 @property (nonatomic,strong) NSString *now_CityName;
 @property (nonatomic)        BOOL      is_allowed;
 
+// Banner
+@property (nonatomic,strong) NSString *banner_image;
+@property (nonatomic,strong) NSString *banner_name;
+@property (nonatomic,strong) NSString *banner_url;
+@property (nonatomic,strong) NSString *banner_type;
+
+// Class
+@property (nonatomic,strong) NSString *class_image;
+@property (nonatomic,strong) NSString *class_classid;
+@property (nonatomic,strong) NSString *class_name;
+@property (nonatomic,strong) NSString *class_number;
 @end

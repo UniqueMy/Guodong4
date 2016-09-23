@@ -8,8 +8,17 @@
 #import <Foundation/NSObject.h>
 #import <UIKit/UIKit.h>
 
+@protocol ClassTableHeadDelegate <NSObject>
+
+@required
+
+- (void)getClassModelByTableHeadWithValue:(NSArray *)value dict:(NSDictionary *)dict;
+- (void)getShopValueByTableHeadWithValue:(NSArray *)value;
+
+@end
+
 @interface ClassTableHeadView : UIView
 
-@property (nonatomic,strong) NSMutableArray *headBannerArray;
+@property (nonatomic,weak) id <ClassTableHeadDelegate> delegate;
 
 @end

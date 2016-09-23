@@ -26,4 +26,11 @@
 @property (nonatomic,strong) NSString *class_classid;
 @property (nonatomic,strong) NSString *class_name;
 @property (nonatomic,strong) NSString *class_number;
+
+// Shop
+@property (nonatomic,strong) NSString *shop_Number;
+@property (nonatomic,strong) NSString *shop_image;
+@property (nonatomic,strong) NSString *shop_place;
+@property (nonatomic,strong) NSString *shop_name;
+
 @end

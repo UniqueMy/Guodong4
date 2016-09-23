@@ -17,5 +17,9 @@
     _BannerImageBlock = BannerImageBlock;
 }
 
+- (void)setShopModelWithReturnBlock:(ShopValueBlock)ShopBlock {
+    
+    _ShopBlock = ShopBlock;
+}
 
 @end

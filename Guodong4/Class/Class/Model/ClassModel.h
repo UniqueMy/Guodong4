@@ -12,6 +12,7 @@
 
 + (instancetype)sharedViewManager;
 
-- (void)startRequest;
+- (void)startRequestClassValue;
+- (void)startRequestShopValue;
 
 @end

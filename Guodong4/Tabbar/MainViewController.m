@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     
-    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
     // 初始化一个tabBar控制器
     UITabBarController *tabbar    = [[UITabBarController alloc] init];

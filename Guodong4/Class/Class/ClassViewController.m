@@ -10,7 +10,7 @@
 #import "LocationView.h"
 #import "CityViewController.h"
 #import "ClassTableView.h"
-
+#import "ClassModel.h"
 @interface ClassViewController ()
 
 @property (nonatomic,strong) UIView         *navigationView;
@@ -140,6 +140,9 @@
     
     [self classView];
     
+    
+    
+   
 }
 
 @end

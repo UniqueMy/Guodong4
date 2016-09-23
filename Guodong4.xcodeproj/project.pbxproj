@@ -12,6 +12,7 @@
 		630B7D5C1D78234600DFC592 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D5B1D78234600DFC592 /* CityModel.m */; };
 		630B7D5F1D78273300DFC592 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D5E1D78273300DFC592 /* CityCell.m */; };
 		630B7D621D7827D700DFC592 /* CityHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 630B7D611D7827D700DFC592 /* CityHeadView.m */; };
+		632F26A51D93A0160003B4EB /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 632F26A41D93A0160003B4EB /* ClassTableViewCell.m */; };
 		632FB8201D7561A5005D4654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 632FB81F1D7561A5005D4654 /* main.m */; };
 		632FB8291D7561A5005D4654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB8271D7561A5005D4654 /* Main.storyboard */; };
 		632FB82B1D7561A5005D4654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FB82A1D7561A5005D4654 /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 		630B7D5E1D78273300DFC592 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
 		630B7D601D7827D700DFC592 /* CityHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHeadView.h; sourceTree = "<group>"; };
 		630B7D611D7827D700DFC592 /* CityHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHeadView.m; sourceTree = "<group>"; };
+		632F26A31D93A0150003B4EB /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTableViewCell.h; sourceTree = "<group>"; };
+		632F26A41D93A0160003B4EB /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTableViewCell.m; sourceTree = "<group>"; };
 		632FB81B1D7561A5005D4654 /* Guodong4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guodong4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FB81F1D7561A5005D4654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		632FB8281D7561A5005D4654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -325,6 +328,8 @@
 				63A51CAB1D79229F00BD1E05 /* ClassTableView.m */,
 				63A51CAE1D79234E00BD1E05 /* ClassTableHeadView.h */,
 				63A51CAF1D79234E00BD1E05 /* ClassTableHeadView.m */,
+				632F26A31D93A0150003B4EB /* ClassTableViewCell.h */,
+				632F26A41D93A0160003B4EB /* ClassTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -376,12 +381,13 @@
 		632FB8131D7561A5005D4654 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hao Sheng";
 				TargetAttributes = {
 					632FB81A1D7561A5005D4654 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = W3F8ZLM4DL;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -473,6 +479,7 @@
 				63A51CB31D79466200BD1E05 /* ClassViewModel.m in Sources */,
 				630B7D5F1D78273300DFC592 /* CityCell.m in Sources */,
 				63A51CA41D79146200BD1E05 /* ClassPublicModel.m in Sources */,
+				632F26A51D93A0160003B4EB /* ClassTableViewCell.m in Sources */,
 				632FB8381D756248005D4654 /* AppDelegate.m in Sources */,
 				630B7D591D78232E00DFC592 /* CityViewModel.m in Sources */,
 				632FB83F1D756579005D4654 /* MainViewController.m in Sources */,
@@ -529,8 +536,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -573,8 +582,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -604,12 +615,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W3F8ZLM4DL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Guodong4/AppDelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = Guodong4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guodong.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -620,12 +635,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W3F8ZLM4DL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Guodong4/AppDelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = Guodong4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guodong.user;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -10,4 +10,6 @@
 
 @interface ClassTableView : UIView
 
+@property (nonatomic,strong) NSArray *bannerImageArray;
+
 @end
